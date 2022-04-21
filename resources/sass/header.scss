@@ -33,7 +33,7 @@
     height: 109px;
    
 
-    li{
+    .liHeader{
         height: 100%;
         display: flex;
         align-items: center;
@@ -42,7 +42,7 @@
     }
 }
 
-li:hover{
+.liHeader:hover{
     border-top: 2px solid transparent;
     border-bottom: 2px solid blue;
     color: blue;

@@ -1,4 +1,24 @@
-footer {
+.contLinkFooter{
+    background:url("/img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    height: 400px;
+    padding:10px 0px;
+
+    .ContBckImg{
+        display: flex;
+        background: url("/img/dc-logo-bg.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+        height:100%;
+        // padding:20px 0px;
+    }
+}
+
+
+
+.contFooter {
     background-color: rgb(62, 62, 62);
     padding: 15px 0px;
 

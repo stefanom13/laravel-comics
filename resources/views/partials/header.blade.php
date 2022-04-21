@@ -61,7 +61,7 @@ $links = [
                     <ul class="ulHeader">
                         @foreach($links as $value)
 
-                        <li>{{$value['text']}}</li>
+                        <li class="liHeader">{{$value['text']}}</li>
 
                         @endforeach
     

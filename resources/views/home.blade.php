@@ -1,5 +1,5 @@
 @extends('layouts.standard')
 
 @section('mainContent')
-    <h1>questa è una home</h1>
+    <h1>qui andrà tutto il contenuto</h1>
 @endsection

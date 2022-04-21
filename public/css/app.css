@@ -55,7 +55,7 @@ a {
   gap: 30px;
   height: 109px;
 }
-.ulHeader li {
+.ulHeader .liHeader {
   height: 100%;
   display: flex;
   align-items: center;
@@ -63,7 +63,7 @@ a {
   text-transform: uppercase;
 }
 
-li:hover {
+.liHeader:hover {
   border-top: 2px solid transparent;
   border-bottom: 2px solid blue;
   color: blue;
@@ -76,17 +76,33 @@ li:hover {
   background-size: cover;
 }
 
-footer {
+.contLinkFooter {
+  background: url("/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  padding: 10px 0px;
+}
+.contLinkFooter .ContBckImg {
+  display: flex;
+  background: url("/img/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 100%;
+}
+
+.contFooter {
   background-color: rgb(62, 62, 62);
   padding: 15px 0px;
 }
-footer .dflexFooter {
+.contFooter .dflexFooter {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
-footer .dflexFooter button {
+.contFooter .dflexFooter button {
   padding: 15px 5px;
   text-transform: uppercase;
   border: 2px solid blue;
@@ -94,18 +110,18 @@ footer .dflexFooter button {
   color: white;
   font-weight: 700;
 }
-footer .dflexFooter .contIconsFooter {
+.contFooter .dflexFooter .contIconsFooter {
   display: flex;
   align-items: center;
   flex-direction: row;
   gap: 10px;
 }
-footer .dflexFooter .contIconsFooter ul {
+.contFooter .dflexFooter .contIconsFooter ul {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-footer .dflexFooter .contIconsFooter p {
+.contFooter .dflexFooter .contIconsFooter p {
   text-transform: uppercase;
   font-weight: 700;
   color: blue;
