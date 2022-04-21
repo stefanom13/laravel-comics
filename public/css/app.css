@@ -75,3 +75,38 @@ li:hover {
   background-position: top center;
   background-size: cover;
 }
+
+footer {
+  background-color: rgb(62, 62, 62);
+  padding: 15px 0px;
+}
+footer .dflexFooter {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .dflexFooter button {
+  padding: 15px 5px;
+  text-transform: uppercase;
+  border: 2px solid blue;
+  background-color: rgb(62, 62, 62);
+  color: white;
+  font-weight: 700;
+}
+footer .dflexFooter .contIconsFooter {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+footer .dflexFooter .contIconsFooter ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .dflexFooter .contIconsFooter p {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: blue;
+}
