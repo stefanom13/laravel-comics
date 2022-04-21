@@ -1,0 +1,32 @@
+.contImg {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px 0px;
+
+    figure {
+        align-self: center;
+        max-width: 85px;
+        min-width: 85px;
+    }
+}
+.bckg-blu {
+    background-color: blue;
+    padding: 6px 0px;
+
+    .dflex {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 35px;
+        color: white;
+    }
+}
+
+.ulHeader {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
