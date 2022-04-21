@@ -47,8 +47,8 @@ $links = [
     <div>
         <div class="bckg-blu">
             <div class="container dflex">
-                <p>scritta1</p>
-                <p>scritta2</p>
+                <p>dc power visa</p>
+                <p>additional dc site</p>
             </div>
         </div>
         <div class="container">
@@ -59,9 +59,12 @@ $links = [
                 </figure>
                 <nav class="navbarHeader">
                     <ul class="ulHeader">
-                        <li>ciaooo</li>
-                        <li>ciaooo</li>
-                        <li>ciaooo</li>
+                        @foreach($links as $value)
+
+                        <li>{{$value['text']}}</li>
+
+                        @endforeach
+    
                     </ul>
                 </nav>
             </div>
