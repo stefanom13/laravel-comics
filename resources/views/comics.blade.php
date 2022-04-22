@@ -10,14 +10,15 @@
             <div class="contWrapper">
                 @foreach ($comics as $indice => $value)
                     <div class="cardComics">
-                        
-                        <div class="comic-card">
-                            <figure>
-                                <img src="{{ $value['thumb'] }}" alt="">
-                            </figure>
-                            <h3>{{ $value['title'] }}</h3>
-                        </div>
-
+                        <a href="{{route('comic.show', ['id' => $indice])}}">
+                            <div class="comic-card">
+                              <figure>
+                                <img src="{{$value['thumb']}}" alt="">
+                              </figure>
+                              <h3>{{$value['title']}}</h3>
+                            </div>
+                          </a>
+                         
                     </div>
                 @endforeach
             </div>

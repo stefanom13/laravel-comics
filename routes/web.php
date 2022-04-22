@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
-})->name('home');
+    return view('comics');
+})->name('comics.index');
 
 Route::get('/infocard', function () {
     return view('infocard');
@@ -66,6 +66,12 @@ Route::get('/characters.index', function () {
     return view('characters');
 })->name('characters.index');
 
-// Route::get('/comics.index/{id}', function ($id) {
+Route::get('/comics.index/{id}', function ($id) {
 
-// })->where('id', '[0-9]+');
+    $comics = config('comics');
+    abort_if(!isset($comics[$id]), 404);
+    $detail = $comics[$id];
+
+    return view('infocard')->with('comics', $detail);
+
+})->where('id', '[0-9]+')->name('comic.show');
