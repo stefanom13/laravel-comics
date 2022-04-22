@@ -1,0 +1,21 @@
+.banner{
+    background-color: blue;
+    padding:10px 0px;
+}
+
+.navBanner{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.contBanner{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 6px;
+
+    .imgBan{
+        width:90px;
+        padding-right: 10px;
+    }
+}
