@@ -125,6 +125,7 @@ a {
 .dflexInfocard .firstSection .contText {
   flex-grow: 1;
   border: 1px solid violet;
+  padding: 10px 0px;
 }
 .dflexInfocard .firstSection .contText .avaible {
   display: flex;
