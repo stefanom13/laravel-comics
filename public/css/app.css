@@ -76,6 +76,34 @@ a {
   background-size: cover;
 }
 
+.section {
+  background-color: lightblue;
+}
+
+.contWrapper {
+  border: 1px solid red;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.contWrapper .cardComics {
+  width: 15%;
+  flex-grow: 1;
+}
+
+.contButton {
+  text-align: center;
+  padding: 10px 0px;
+}
+.contButton .btn-primary {
+  padding: 10px 25px;
+  background-color: blue;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .banner {
   background-color: blue;
   padding: 10px 0px;

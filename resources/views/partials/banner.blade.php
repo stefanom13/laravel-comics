@@ -33,8 +33,7 @@ $ban = [
     <div class="container navBanner ">
         <ul class="contBanner">
             @foreach ($ban as $value)
-                    <h3>{{ $value['text'] }}</h3>
-                    
+                <h3><a href="">{{ $value['text'] }}</a></h3>
                 <li class="imgBan"><img src="{{ asset($value['img']) }}" alt=""></li>
           
             
