@@ -22,8 +22,13 @@ Route::get('/infocard', function () {
 })->name('infocard');
 
 Route::get('/comics.index', function () {
-    return view('comics');
+
+    $comics = config('comics');
+
+    return view('comics')->with('comics', $comics);
+
 })->name('comics.index');
+
 
 Route::get('/games.index', function () {
     return view('games');
@@ -60,3 +65,7 @@ Route::get('/shop.index', function () {
 Route::get('/characters.index', function () {
     return view('characters');
 })->name('characters.index');
+
+// Route::get('/comics.index/{id}', function ($id) {
+
+// })->where('id', '[0-9]+');
