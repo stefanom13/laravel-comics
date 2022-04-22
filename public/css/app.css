@@ -109,11 +109,41 @@ a {
   align-items: center;
   flex-direction: column;
   padding: 20px;
+  position: relative;
+  border: 1px solid green;
+}
+.dflexInfocard .contThumb {
+  position: absolute;
+  top: -200px;
+  left: 100px;
+  width: 120px;
 }
 .dflexInfocard .firstSection {
   display: flex;
+  gap: 35px;
+}
+.dflexInfocard .firstSection .contText {
+  flex-grow: 1;
+  border: 1px solid violet;
+}
+.dflexInfocard .firstSection .contText .avaible {
+  display: flex;
   align-items: center;
-  gap: 15px;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 15px 0px;
+  background-color: lightgreen;
+}
+.dflexInfocard .firstSection .contText .avaible .priceAvaible {
+  margin-right: 30px;
+}
+.dflexInfocard .firstSection .contText .avaible .infoAvaible {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.dflexInfocard .firstSection .advertisement p {
+  text-align: right;
 }
 .dflexInfocard .secondSection {
   display: flex;

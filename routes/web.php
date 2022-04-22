@@ -14,14 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('comics');
-})->name('comics.index');
+    return view('home');
+})->name('home');
 
-Route::get('/infocard', function () {
-    return view('infocard');
-})->name('infocard');
 
-Route::get('/comics.index', function () {
+Route::get('/comics', function () {
 
     $comics = config('comics');
 
@@ -29,44 +26,48 @@ Route::get('/comics.index', function () {
 
 })->name('comics.index');
 
+Route::get('/infocard', function () {
+    return view('infocard');
+})->name('infocard');
 
-Route::get('/games.index', function () {
+
+Route::get('/games', function () {
     return view('games');
 })->name('games.index');
 
-Route::get('/tv.index', function () {
+Route::get('/tv', function () {
     return view('tv');
 })->name('tv.index');
 
-Route::get('/movies.index', function () {
+Route::get('/movies', function () {
     return view('movies');
 })->name('movies.index');
 
-Route::get('/collectibles.index', function () {
+Route::get('/collectibles', function () {
     return view('collectibles');
 })->name('collectibles.index');
 
-Route::get('/videos.index', function () {
+Route::get('/videos', function () {
     return view('videos');
 })->name('videos.index');
 
-Route::get('/fans.index', function () {
+Route::get('/fans', function () {
     return view('fans');
 })->name('fans.index');
 
-Route::get('/news.index', function () {
+Route::get('/news', function () {
     return view('news');
 })->name('news.index');
 
-Route::get('/shop.index', function () {
+Route::get('/shop', function () {
     return view('shop');
 })->name('shop.index');
 
-Route::get('/characters.index', function () {
+Route::get('/characters', function () {
     return view('characters');
 })->name('characters.index');
 
-Route::get('/comics.index/{id}', function ($id) {
+Route::get('/comics/{id}', function ($id) {
 
     $comics = config('comics');
     abort_if(!isset($comics[$id]), 404);
