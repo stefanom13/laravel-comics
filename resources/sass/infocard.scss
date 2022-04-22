@@ -1,0 +1,17 @@
+.dflexInfocard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:20px;
+
+    .firstSection{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .secondSection{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}

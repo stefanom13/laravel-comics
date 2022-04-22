@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::get('/infocard', function () {
+    return view('infocard');
+})->name('infocard');
+
 Route::get('/comics.index', function () {
     return view('comics');
 })->name('comics.index');
