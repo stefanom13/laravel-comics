@@ -77,15 +77,32 @@ a {
 }
 
 .section {
-  background-color: lightblue;
+  background-color: black;
+}
+.section .prCont {
+  position: relative;
+  padding: 20px 0px;
+}
+.section .prCont .SerieCorrente {
+  position: absolute;
+  top: -38px;
+  left: 0;
+}
+.section .prCont .SerieCorrente button {
+  background-color: blue;
+  padding: 15px 10px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
 }
 
 .contWrapper {
-  border: 1px solid red;
   padding: 5px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  color: white;
 }
 .contWrapper .cardComics {
   width: 15%;
@@ -108,9 +125,8 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
   position: relative;
-  border: 1px solid green;
 }
 .dflexInfocard .contThumb {
   position: absolute;
@@ -125,7 +141,6 @@ a {
 }
 .dflexInfocard .firstSection .contText {
   flex-grow: 1;
-  border: 1px solid violet;
   padding: 10px 0px;
   max-width: 732px;
 }
@@ -173,8 +188,72 @@ a {
 }
 .dflexInfocard .secondSection {
   display: flex;
-  align-items: center;
   gap: 15px;
+  width: 86%;
+}
+.dflexInfocard .secondSection .contTalent {
+  width: 55%;
+}
+.dflexInfocard .secondSection .dFlexts {
+  display: flex;
+  flex-direction: column;
+}
+.dflexInfocard .secondSection .talentSpecs {
+  padding: 10px 0px;
+}
+.dflexInfocard .secondSection .dflexAuthor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.dflexInfocard .secondSection .dflexAuthor .listAuthor {
+  font-weight: bold;
+  text-align: right;
+  width: 75%;
+  color: rgb(64, 64, 225);
+}
+.dflexInfocard .secondSection .dflexWriteby {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0px;
+  border-bottom: 1px solid black;
+}
+.dflexInfocard .secondSection .dflexWriteby .listWriteby {
+  text-align: right;
+  width: 75%;
+  color: rgb(64, 64, 225);
+  font-weight: bold;
+}
+.dflexInfocard .secondSection .contSpecs {
+  width: 45%;
+}
+.dflexInfocard .secondSection .contSpecs .contInfots {
+  display: flex;
+  flex-direction: column;
+}
+.dflexInfocard .secondSection .contSpecs .contInfots .row {
+  padding: 8px 0px;
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+.dflexInfocard .secondSection .contSpecs .contInfots .row .titleRow {
+  width: 45%;
+}
+.dflexInfocard .secondSection .contSpecs .contInfots .row .titleSeries {
+  text-transform: uppercase;
+  color: blue;
+}
+.dflexInfocard .secondSection .contSpecs .contInfots .bB {
+  border-bottom: 1px solid black;
+}
+
+.bckSecondSection {
+  background-color: rgb(240, 240, 240);
 }
 
 .banner {

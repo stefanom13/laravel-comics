@@ -1,13 +1,36 @@
 .section{
-    background-color: lightblue;
+    background-color: black;
+    .prCont{
+        position: relative;
+        padding: 20px 0px;;
+        .SerieCorrente{
+            position: absolute;
+            top: -38px;
+            left: 0;
+
+
+            button{
+                background-color:blue;
+                padding: 15px 10px;
+                color: white;
+                text-transform: uppercase;
+                border: none;
+                font-weight: bold;
+            }
+        }
+    
+    }
+
+
 }
 
 .contWrapper{
-    border: 1px solid red;
+
     padding: 5px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    color: white;
 
     .cardComics{
         width: 15%;

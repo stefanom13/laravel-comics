@@ -2,9 +2,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding:20px;
+    padding:10px;
     position: relative;
-    border: 1px solid green;
 
     .contThumb{
         position: absolute;
@@ -23,7 +22,6 @@
 
         .contText{
             flex-grow: 1;
-            border: 1px solid violet;
             padding: 10px 0px;
             max-width: 732px;;
 
@@ -85,7 +83,92 @@
     }
     .secondSection{
         display: flex;
-        align-items: center;
+        // align-items: center;
         gap: 15px;
+        width: 86%;
+
+        .contTalent{
+            width: 55%;
+
+        }
+        .dFlexts{
+            display: flex;
+            flex-direction: column;
+            // min-height:  100px;
+            
+        }
+
+        .talentSpecs{
+            padding:10px 0px;
+
+        }
+
+        .dflexAuthor{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            padding:10px 0px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+
+            .listAuthor{
+                font-weight: bold;
+                text-align:right;
+                width: 75%;
+                color: rgb(64, 64, 225);
+            }
+
+        }
+        .dflexWriteby{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            padding:10px 0px;
+            border-bottom: 1px solid black;
+
+            .listWriteby{
+                text-align:right;
+                width: 75%;
+                color: rgb(64, 64, 225);
+                font-weight: bold;
+            }
+
+
+        }
+        .contSpecs{
+            width: 45%;
+
+            .contInfots{
+                display: flex;
+                flex-direction: column;
+    
+                .row{
+                    padding: 8px 0px ;
+                    border-top: 1px solid black;
+                    display: flex;
+                    flex-direction: row;
+
+                    .titleRow{
+                        width: 45%;
+                    }
+
+                    .titleSeries{
+                        text-transform: uppercase;
+                        color: blue;
+                    }
+                    
+                    
+                }
+
+                .bB{
+                    border-bottom: 1px solid black;
+                }
+            }
+        }
+        
     }
+}
+
+.bckSecondSection{
+    background-color:rgb(240, 240, 240);
 }

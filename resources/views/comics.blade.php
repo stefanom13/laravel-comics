@@ -2,9 +2,11 @@
 
 @section('mainContent')
     <div class="section">
-        <div class="container">
+        <div class="container prCont">
             <div class="SerieCorrente">
-                seriecorrente
+                <button>
+                    current series
+                </button>
             </div>
 
             <div class="contWrapper">
