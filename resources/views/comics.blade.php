@@ -12,7 +12,7 @@
             <div class="contWrapper">
                 @foreach ($comics as $indice => $value)
                     <div class="cardComics">
-                        <a href="{{route('comic.show', ['id' => $indice])}}">
+                        <a class="" href="{{route('comic.show', ['id' => $indice])}}">
                             <div class="comic-card">
                               <figure>
                                 <img src="{{$value['thumb']}}" alt="">
