@@ -9,17 +9,21 @@
             </div>
             <div class="firstSection">
                 <div class="contText">
-                    <h2>{{$comics['title']}}</h2>
+                    <h2 class="titleComic">{{$comics['title']}}</h2>
 
                     <div class="avaible">
-                        <p class="priceAvaible">prezzo</p>
+                        <p class="priceAvaible">U.S. Price: <span>{{$comics['price']}}</span></p>
                         <div class="infoAvaible">
-                            <p>disponibilita</p>
-                            <p>disponibilita</p>
+                            <p class="infoAv">Avaible</p>
+                            <select class="check" name="" id="" placeholder='Check Availability'>
+                                <option value="">Check Availability</option>
+                                <option value="">10</option>
+                                <option value="">20</option>
+                              </select>
                         </div>
                     </div>
 
-                    <p>testo</p>
+                    <p>{{$comics['description']}}</p>
                 </div>
                 <div class="advertisement">
                     <p>advertisement</p>

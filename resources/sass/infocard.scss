@@ -17,13 +17,23 @@
 
     .firstSection{
         display: flex;
-        // align-items: center;
         gap: 35px;
+        width: 86%;
+
 
         .contText{
             flex-grow: 1;
             border: 1px solid violet;
             padding: 10px 0px;
+            max-width: 732px;;
+
+            .titleComic{
+                padding: 10px 0px ;
+                font-size:34px;
+                color: rgb(64, 64, 225);
+                width:100%;
+                
+            }
 
             .avaible{
                 display: flex;
@@ -34,12 +44,33 @@
                 background-color:lightgreen;
 
                 .priceAvaible{
-                    margin-right: 30px;
+                   padding: 0px 15px;
+                   color:rgb(72, 71, 71);
+                   font-size: 18px;
+
+
+                   span{
+                       font: weight 700px;
+                       color: white;
+                       font-size: 20px;
+                   }
                 }
                 .infoAvaible{
                     display: flex;
                     align-items: center;
-                    gap: 5px;
+                    gap: 15px;
+                    padding: 0px 10px;
+
+                    .infoAv{
+                        border-right: 1px solid gray;
+                        padding-right: 10px;
+                    }
+
+                    .check{
+                        color: white;
+                        border: none;
+                        background-color:lightgreen;
+                    }
                 }
             }
             

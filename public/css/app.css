@@ -121,11 +121,19 @@ a {
 .dflexInfocard .firstSection {
   display: flex;
   gap: 35px;
+  width: 86%;
 }
 .dflexInfocard .firstSection .contText {
   flex-grow: 1;
   border: 1px solid violet;
   padding: 10px 0px;
+  max-width: 732px;
+}
+.dflexInfocard .firstSection .contText .titleComic {
+  padding: 10px 0px;
+  font-size: 34px;
+  color: rgb(64, 64, 225);
+  width: 100%;
 }
 .dflexInfocard .firstSection .contText .avaible {
   display: flex;
@@ -136,12 +144,29 @@ a {
   background-color: lightgreen;
 }
 .dflexInfocard .firstSection .contText .avaible .priceAvaible {
-  margin-right: 30px;
+  padding: 0px 15px;
+  color: rgb(72, 71, 71);
+  font-size: 18px;
+}
+.dflexInfocard .firstSection .contText .avaible .priceAvaible span {
+  font: weight 700px;
+  color: white;
+  font-size: 20px;
 }
 .dflexInfocard .firstSection .contText .avaible .infoAvaible {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
+  padding: 0px 10px;
+}
+.dflexInfocard .firstSection .contText .avaible .infoAvaible .infoAv {
+  border-right: 1px solid gray;
+  padding-right: 10px;
+}
+.dflexInfocard .firstSection .contText .avaible .infoAvaible .check {
+  color: white;
+  border: none;
+  background-color: lightgreen;
 }
 .dflexInfocard .firstSection .advertisement p {
   text-align: right;
