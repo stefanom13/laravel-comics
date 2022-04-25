@@ -26,7 +26,7 @@
             </div>
             <div class="contButton">
                 <button class=" btn-primary">
-                    load more
+                    load more..
                 </button>
             </div>
         </div>
